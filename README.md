@@ -1,6 +1,6 @@
 # ags-shell
 
-A desktop shell for [Hyprland](https://hyprland.org), written in TypeScript/TSX on [AGS](https://github.com/aylur/ags) and [Astal](https://github.com/aylur/astal) (GTK4), packaged as a home-manager module.
+A desktop shell for [Hyprland](https://hyprland.org), written in TypeScript/TSX on [AGS](https://github.com/aylur/ags) and [Astal](https://github.com/aylur/astal) (GTK4), packaged as a home-manager module. Hugely inspired from [JohnOberhauser](https://github.com/JohnOberhauser/OkPanel).
 
 > **Archived.** This was my desktop from 2025, I have since ported it to Quickshell (QML). It's published as a reference and is not maintained nor complete.
 
@@ -87,45 +87,22 @@ The shell registers its own keybindings and layer rules with Hyprland at startup
 | `Print` | screenshot of the display, saved to the screenshot directory |
 | media keys | volume, mic mute, brightness |
 
-## Layout
-
-```
-config/       the shell: app.ts entry, src/widget/ (one folder per surface), src/store/ (state, services, hypr.ts for Hyprland), src/scss/
-nix/          package.nix (launcher + ags + scripts), module.nix (home-manager), nixos.nix, hypr/ (hyprlock, hypridle), scripts/
-```
-
 ## Credits
 
 Built on [AGS](https://github.com/aylur/ags) and [Astal](https://github.com/aylur/astal) by Aylur.
 
-The symbolic icons in `config/src/icons/` come from the open-source sets below, mostly by way of [Iconify](https://iconify.design). Many were modified: recoloured, recropped, renamed, or combined (the battery and Wi-Fi state variants are built from Material Design Icons glyphs). Each icon keeps its set's licence.
+The symbolic icons in `config/src/icons/` come from the open-source sets below, mostly by way of [Iconify](https://iconify.design).
 
 | Set | Author | Licence | Files |
 |---|---|---|---|
 | [Material Design Icons](https://github.com/Templarian/MaterialDesign) | Pictogrammers | Apache-2.0 | `mdi-*` |
 | [Material Symbols](https://github.com/google/material-design-icons) (incl. Light) | Google | Apache-2.0 | `ms-*`, `msl-*` |
-| [Font Awesome 4](https://github.com/FortAwesome/Font-Awesome/tree/fa-4) | Dave Gandy | OFL-1.1 | `fa-*` |
 | [Font Awesome 6 Free](https://github.com/FortAwesome/Font-Awesome) | Fonticons | CC BY 4.0 | `fa6-*` |
-| [Streamline Plump](https://github.com/webalys-hq/streamline-vectors) | Streamline | CC BY 4.0 | `plump-*` |
-| [Carbon](https://github.com/carbon-design-system/carbon) | IBM | Apache-2.0 | `carbon-*` |
-| [Unicons](https://github.com/Iconscout/unicons) | Iconscout | Apache-2.0 | `uis-*` |
-| [IconPark](https://github.com/bytedance/IconPark) | ByteDance | Apache-2.0 | `ipo-*` |
 | [Charm Icons](https://github.com/jaynewey/charm-icons) | Jay Newey | MIT | `charm-*` |
-| [Eva Icons](https://github.com/akveo/eva-icons) | Akveo | MIT | `eva-*` |
 | [Framework7 Icons](https://github.com/framework7io/framework7-icons) | Vladimir Kharlampidi | MIT | `f7-*` |
 | [Fluent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | Microsoft | MIT | `fluent-*` |
-| [css.gg](https://github.com/astrit/css.gg) | Astrit | MIT | `gg-*` |
-| [Myna UI Icons](https://github.com/praveenjuge/mynaui-icons) | Praveen Juge | MIT | `myna-*` |
-| [Octicons](https://github.com/primer/octicons) | GitHub | MIT | `octicon-*` |
-| [Teenyicons](https://github.com/teenyicons/teenyicons) | smhmd | MIT | `tick-*` |
-| [Reicon](https://github.com/dqev/reicon) | REICON | MIT | `solar-route-*` |
 | [Lucide](https://github.com/lucide-icons/lucide) | Lucide Contributors | ISC | `lucide-*` |
-| [File Icons](https://github.com/file-icons/icons) | John Gardner | ISC | `fi-*` |
-| [Devicon](https://github.com/devicons/devicon) | konpa | MIT | `nixos*` |
-| [theSVG](https://github.com/glincker/thesvg) | thesvg.org | MIT | `si-wireguard-*` |
-
-The NixOS, Tailscale and WireGuard logos are trademarks of their respective owners and are used only to label those services. `night-mode-*` and `bluetooth-device-*` are adapted icons whose origin wasn't recorded.
 
 ## Licence
 
-[MIT](LICENSE), except the bundled icons, which keep their own licences (see Credits).
+[MIT](LICENSE), excluding bundled icons (see Credits).
