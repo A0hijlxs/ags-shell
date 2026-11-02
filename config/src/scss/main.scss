@@ -1,0 +1,21 @@
+/*
+ *    ____  _         _
+ *  / ___|| |_ _   _| | ___
+ *  \___ \| __| | | | |/ _ \
+ *   ___) | |_| |_| | |  __/
+ *  |____/ \__|\__, |_|\___|
+ *             |___/
+ * -----------------------------------------------------
+*/
+
+
+@use "colours";
+
+@use 'widgets/alerts';
+@use 'widgets/bar';
+@use 'widgets/logout';
+@use 'widgets/launcher';
+@use 'widgets/notifications';
+@use 'widgets/controller';
+@use 'widgets/menu';
+@use 'widgets/screencapture'

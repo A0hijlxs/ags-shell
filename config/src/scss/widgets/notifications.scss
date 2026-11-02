@@ -1,0 +1,45 @@
+@use "../colours" as vars;
+
+.notification-window {
+    background: transparent;
+    margin: 5px
+}
+
+.notification {
+    background-color: vars.$background-blur;
+    border-style: solid;
+    border-radius: vars.$border-radius;
+    border-width: vars.$border-width;
+    border-color: vars.$accent;
+    color: vars.$text-colour;
+
+    padding: 10px;
+
+    button {
+        color: vars.$text-colour;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+    }
+
+    .header {
+        font-size: 10pt;
+    }
+
+    .content {
+
+        padding: 5px;
+        
+        .image {
+            -gtk-icon-size: 44px;
+        }
+    
+        .summary {
+            font-size: 12pt;
+        }
+    
+        .body {
+            font-size: 10pt;
+        }
+    }    
+}

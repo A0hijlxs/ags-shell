@@ -1,0 +1,155 @@
+@use "../colours" as vars;
+
+.system-menu-window {
+  background: transparent;
+}
+
+.system-menu-backdrop {
+  background: rgba(0, 0, 0, 0.004);
+}
+
+.system-menu {
+  margin: 5px;
+  background-color: vars.$background-blur;
+  border: vars.$border-width solid vars.$accent;
+  border-radius: vars.$border-radius;
+  padding: 15px;
+}
+
+button {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+switch {
+  background-color: vars.$button-background;
+  border: none;
+  transition: background-color 500ms ease;
+
+  slider {
+    border: none;
+    margin: 0px;
+    outline: none;
+    background: vars.$text-colour;       
+  }
+
+  &:checked {
+    background-color: vars.$accent; 
+  }
+}
+
+.sub-menu {
+  button {
+    background: vars.$button-background;
+
+    &:hover {
+      background: vars.$button-hover;
+    }
+  }
+
+  .actions-box button {
+    padding: 4px 10px;
+  }
+
+  .adapter-button,
+  .item-button {
+    padding: 4px 10px;
+    background: none;
+  }
+}
+
+.separator-label {
+  separator {
+    min-height: 1px;
+    background-color: vars.$text-colour;
+    margin: 8px 5px;
+  }
+
+  > label {
+    padding: 0px 5px;
+    background-color: vars.$background;
+  }
+}
+
+.overview-menu {
+  separator {
+    min-height: 1px;
+    background-color: vars.$text-colour;
+    margin: 8px 15px;
+  }
+
+  .overview-button {
+    background: none;
+    outline: none;
+  }
+
+  .overview-icon {
+    -gtk-icon-size: 26px;
+  }
+
+  .overview-name {
+    font-size: 11pt;
+  }
+
+  .overview-label {
+    font-size: 9pt;
+  }
+
+  .overview-slider {
+    border-radius: vars.$slider-radius;
+
+    trough {
+      background: vars.$button-background;
+      min-height: vars.$slider-height;
+      border-radius: vars.$slider-radius;
+      border: none;
+
+      highlight {
+        border: none;
+        border-radius: vars.$slider-radius;
+        min-width: 2px;
+        min-height: 2px;
+        background: vars.$accent;
+      }
+
+      slider {
+        all: unset;
+      }
+    }
+
+    &.inactive trough highlight {
+      background-color: rgba(vars.$accent, 0.2);
+    }
+  }
+}
+
+.node {
+  -gtk-icon-size: 22px;
+  .online {
+    color: vars.$checked;
+  }
+  .offline {
+    color: vars.$warning;
+  }
+  .inactive {
+    color: vars.$text-muted;
+  }
+}
+
+.track-slider {
+  border-radius: vars.$slider-radius;
+
+  trough {
+    background: vars.$button-background;
+    min-height: vars.$slider-height;
+
+    highlight {
+      background: vars.$accent;
+    }
+
+    slider {
+      all: unset;
+    }
+  }
+}

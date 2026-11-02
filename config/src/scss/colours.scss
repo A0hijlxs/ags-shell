@@ -1,0 +1,63 @@
+
+// ----------------------------
+// Theme 1
+// ----------------------------
+
+$background-1: #181723;
+$accent-1: #A03878;
+$secondary-1: #D4BFF9;
+$text-colour-1: #E1DFEF ;
+$button-background-1: #26243C;
+$button-hover-1: #3a3f4b;
+
+// ----------------------------
+// Theme 2
+// ----------------------------
+
+$background-2: #1C1D26;
+$accent-2: #5F93FF;
+$secondary-2: #A386F3;
+$text-colour-2: #E1DFEF;
+$button-background-2: #222940;
+$button-hover-2: #333333;
+
+// ----------------------------
+// Current Selection
+// ----------------------------
+
+$background: $background-1;
+$background-blur: rgba($background, 0.60);
+$accent: $secondary-2;
+$secondary: $secondary-1;
+$text-colour: $text-colour-1;
+$button-background: $button-background-1;
+$button-hover: $button-hover-1;
+
+$warning: #BF616A;
+$checked: #72D792;
+
+$border-radius: 12px;
+$border-width: 0px;
+$slider-radius: 16px;
+$slider-height: 8px;
+$text-muted: #545359;
+
+// ----------------------------
+// Global
+// ----------------------------
+
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+// ----------------------------
+// Spare
+// ----------------------------
+
+// $background: #1E1E1E;
+// $color: #D4BFF9;
+// $background: #3700B3;
+
+// #53B6FB
+// #BDA0F8

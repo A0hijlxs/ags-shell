@@ -1,0 +1,57 @@
+
+@use "../colours.scss" as vars;
+
+.launcher {
+  background: transparent;
+}
+
+.launcher-content {
+  background: vars.$background-blur;
+  border-style: solid;
+  border-radius: vars.$border-radius;
+  border-width: vars.$border-width;
+  border-color: vars.$accent;
+  padding: 15px;
+
+  button {
+    padding: 10px;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .selected {
+    background-color: vars.$accent;
+    &:hover {
+      background-color: vars.$accent;
+    }
+  }
+
+  image {
+    -gtk-icon-size: 24px;
+  }
+
+  .wallpaper-thumb {
+    min-width: 80px;
+    min-height: 45px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  label {
+    font-size: 12pt;
+  }
+
+  entry {
+    outline: none;
+    border: none;
+    background-color: vars.$button-background;
+  }
+
+  .source {
+    padding: 5px;
+    font-weight: bold;
+    background-color: vars.$accent;
+  }
+}

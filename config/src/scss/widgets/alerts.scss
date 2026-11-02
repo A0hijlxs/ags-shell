@@ -1,0 +1,42 @@
+@use "../colours" as vars;
+
+.alert-window {
+  background-color: vars.$background-blur;
+  border-style: solid;
+  border-radius: vars.$border-radius;
+  border-width: vars.$border-width;
+  border-color: vars.$accent;
+  padding: 16px;
+}
+
+.alertIcon {
+  -gtk-icon-size: 55px
+}
+
+.alertContent {
+  min-width: 150px;
+}
+
+.alertProgress {
+  min-width: 150px;
+  padding: 0px 0px;
+}
+
+.alertProgress trough {
+  border: none;
+  background: vars.$button-background;
+  min-height: vars.$slider-height;
+  border-radius: vars.$slider-radius;
+}
+
+.alertProgress trough slider {
+  all: unset;
+}
+
+.alertProgress trough highlight {
+  border: none;
+  min-height: 2px;
+  min-width: 8px;
+  border-radius: vars.$slider-radius;
+  background: vars.$text-colour;
+}

@@ -1,0 +1,77 @@
+@use "../colours" as vars;
+
+.bar-box {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: vars.$background-blur;
+  color: vars.$text-colour;
+  border-radius: vars.$border-radius;
+  margin: 0px 5px;
+  padding-top: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  min-height: 45px;
+
+  button {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+tooltip {
+  background: vars.$background;
+  color: vars.$text-colour;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+.workspaces {
+  // padding: 2px 0px 0px 0px;
+
+  .workspace {
+    border: 2px solid vars.$text-colour;
+    background: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 0px;
+
+    min-height: 15px;
+    min-width: 15px;
+
+    &:hover {
+      background-color: vars.$accent;
+    }
+  }
+
+  .focused {
+    border: 2px solid vars.$accent;
+    min-width: 30px;
+    border-radius: 10px;
+    background-color: vars.$accent;
+  }
+}
+
+.system-widgets {
+  background: transparent;
+
+  image {
+    -gtk-icon-size: 22px;
+    color: vars.$text-colour;
+  }
+}
+
+.os-logo {
+  background: none;
+  color: vars.$accent-2;
+  -gtk-icon-size: 30px;
+}
+
+.power-button {
+  background: none;
+  -gtk-icon-size: 20px;
+  color: vars.$accent;
+  margin-left: -4px;
+}

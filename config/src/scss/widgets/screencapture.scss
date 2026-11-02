@@ -1,0 +1,76 @@
+@use "../colours" as vars;
+
+.screencapture-window {
+    background: transparent;
+}
+
+.screencapture-content {
+    background-color: vars.$background-blur;
+    color: vars.$text-colour;
+    border-style: solid;
+    border-color: vars.$accent;
+    border-radius: vars.$border-radius;
+    border-width: vars.$border-width;
+    padding: 15px;
+    margin: 5px;
+    font-size: 11pt;
+
+    .icon {
+        -gtk-icon-size: 28pt;
+    }
+
+    .text {
+        font-size: 12pt;
+    }
+
+    button {
+        background: vars.$button-background;
+        color: vars.$text-colour;
+        border: none;
+        padding: 10px;
+        min-height: 0px;
+
+        &:hover {
+            background: vars.$button-hover;
+        }
+    }
+
+    .capture-mode,
+    .capture-button {
+        padding: 10px 8px;
+    }
+
+    .capture-mode.selected {
+        background: vars.$accent;
+    }
+
+    .model-button {
+        padding: 1px 10px;
+
+        &:disabled {
+            opacity: 0.35;
+        }
+    }
+
+    .toggle-row {
+        padding: 4px 10px;
+        background: none;
+
+        &:hover {
+            background: vars.$button-hover;
+        }
+    }
+
+    switch {
+        background-color: vars.$button-background;
+        border: none;
+
+        slider {
+            background: vars.$text-colour;
+        }
+
+        &:checked {
+            background-color: vars.$accent;
+        }
+    }
+}

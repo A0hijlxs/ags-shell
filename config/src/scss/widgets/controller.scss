@@ -1,0 +1,56 @@
+@use "../colours" as vars;
+
+.controller-window {
+    background: transparent;
+}
+
+.controller {
+    background-color: vars.$background-blur;
+    color: vars.$text-colour;
+    border-style: solid;
+    border-color: vars.$accent;
+    border-radius: vars.$border-radius;
+    border-width: vars.$border-width;
+    padding: 15px;
+    margin: 5px
+}
+
+.preview-box {
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px;
+}
+
+.client-preview {
+    background-color: rgb(vars.$button-background, 0.5);
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;   
+}
+
+.hovered {
+    box-shadow: none;
+    outline: 3px solid vars.$accent;
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+.focused {
+    outline: 3px solid vars.$accent;
+}
+
+.wallpaper {
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.workspace-label {
+    background-color: vars.$button-background;
+    border-radius: 10px;
+    padding: 2px 40px;
+}
+
+.snapshot-glow {
+    border: 3px solid vars.$accent;
+    background-color: rgba(255, 255, 255, 0.2);
+}

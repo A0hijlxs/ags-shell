@@ -1,0 +1,33 @@
+@use "../colours" as vars;
+
+.logout-window {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logout {
+    button {
+        border-color: vars.$secondary;
+        outline: none;
+        min-width: 300px;
+        min-height: 200px;
+        background: vars.$background;
+        color: vars.$accent;
+        border-radius: vars.$border-radius;
+        margin: 1px;
+
+        &:focus,
+        &:hover {
+            background: vars.$accent;
+            color: vars.$text-colour;
+        }
+
+        .icon {
+            -gtk-icon-size: 90px;
+        }
+
+        .text {
+            font-size: 18px;
+            color: vars.$text-colour;
+        }
+    }
+}
