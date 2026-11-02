@@ -1,0 +1,10 @@
+[Icon Theme]
+Name=iconTheme
+Inherits=hicolor
+Directories=hicolor/scalable/actions
+
+[hicolor/scalable/actions]
+Type=Scalable
+Context=Actions
+MinSize=1
+MaxSize=512
