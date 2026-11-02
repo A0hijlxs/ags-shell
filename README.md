@@ -2,7 +2,7 @@
 
 A desktop shell for [Hyprland](https://hyprland.org), written in TypeScript/TSX on [AGS](https://github.com/aylur/ags) and [Astal](https://github.com/aylur/astal) (GTK4), packaged as a home-manager module.
 
-> **Archived.** This was my daily desktop from 2025 until 2026-10-18, when I replaced it with a Quickshell (QML) shell ported from it. It's published as a reference and is not maintained.
+> **Archived.** This was my desktop from 2025, I have since ported it to Quickshell (QML). It's published as a reference and is not maintained nor complete.
 
 ![Desktop with the bar](screenshots/desktop.webp)
 
@@ -13,14 +13,15 @@ A desktop shell for [Hyprland](https://hyprland.org), written in TypeScript/TSX 
 
 ## Features
 
-- **Bar** - workspaces, clock, battery, Wi-Fi, Bluetooth, Tailscale, night-light and power indicators.
-- **Launcher** - app search and a wallpaper picker with cached thumbnails; wallpapers are set through `awww`.
-- **System menu** - network (Wi-Fi, VPN, Tailscale), Bluetooth, audio devices and volumes, brightness, media players, power and appearance pages.
-- **Controller** - a workspace overview showing each window by its app icon; drag a window between workspaces.
-- **Screen capture** - display, window or area capture, copied or saved, with an optional *Ask Claude* mode that sends the capture to the `claude` CLI and renders the answer as Markdown.
-- **Notifications** - its own notification daemon (Astal notifd) showing popups in the corner.
-- **Alerts** - on-screen indicators for volume, mic, brightness, keyboard backlight, battery, privacy mode and night light.
-- **Logout menu**, **night light** via `hyprsunset`, and **privacy mode** for screen sharing: notification popups are suppressed, the bar and overview show only the current workspace, and the Tailscale indicator is hidden.
+- **Bar** - workspaces, clock, system widgets.
+- **Launcher** - app search and a wallpaper picker through `awww`.
+- **System menu** - network (Wi-Fi, VPN, Tailscale), Bluetooth, audio devices, brightness.
+- **Controller** - a workspace overview.
+- **Screen capture** - display, window or area capture, copied or saved, with an optional *Ask AI* mode.
+- **Notifications** - Notif daemon, with popups in the corner.
+- **Alerts** - on-screen indicators for volume, mic, brightness, privacy mode and night light.
+- **Logout menu**
+- **night light** via `hyprsunset`.
 - Optional: matching **hyprlock** lock screen and **hypridle** idle ladder.
 
 ## Try it
